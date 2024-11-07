@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Appel">
+      <UniqueIdentifier>{afa1c777-eabd-4fc2-ab16-54b6bb7a0dad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Appel\Common">
+      <UniqueIdentifier>{45f43ff4-801f-4fc6-93c9-642569aba3f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Appel">
+      <UniqueIdentifier>{12f2a433-a384-478c-a63c-0bd33a7df1d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Appel\Common">
+      <UniqueIdentifier>{77f4cbc0-f4e1-48ce-bfdd-a5857b64f399}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Appel\Hooks">
+      <UniqueIdentifier>{27ad1ded-9147-4c1a-b719-5c4f3073d15e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Appel\Hooks">
+      <UniqueIdentifier>{2afd1b41-281e-4f41-aa88-f7fab62b5869}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Appel\Menu">
+      <UniqueIdentifier>{dbe9461a-f393-4c42-8109-f77b753ce97a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Appel\Menu">
+      <UniqueIdentifier>{944ad767-1e45-4790-aa27-9bdeb5c95ca9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Appel\Common\imgui">
+      <UniqueIdentifier>{9809693f-38cc-4585-a4ff-7ffaea92184f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Appel\Common\imgui">
+      <UniqueIdentifier>{ee42a064-8014-4099-853e-4ff1b6d8001a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Appel\Common\imgui\dirent">
+      <UniqueIdentifier>{66981b71-e070-4e09-97d9-5f9c85564148}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Appel\UI">
+      <UniqueIdentifier>{f66ead7f-4f97-4506-91a3-83f93b2d8ecf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Appel\UI">
+      <UniqueIdentifier>{cd3bf7c0-2459-4b13-9520-079d063af436}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Appel\Drawing">
+      <UniqueIdentifier>{7558da42-befe-4ef5-bed7-ad418bd953ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Appel\Drawing">
+      <UniqueIdentifier>{8514885e-8977-46ba-b325-f4bf3cc077de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Appel\Features">
+      <UniqueIdentifier>{8a55e9c1-d9b3-4281-8141-499bebe4aabe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Appel\Features">
+      <UniqueIdentifier>{8a6f7707-8b24-4d92-ae99-2361543d5fb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Appel\Config">
+      <UniqueIdentifier>{3fb9eea7-a35f-4f6e-9145-5476f49d96c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Appel\Config">
+      <UniqueIdentifier>{c18aca82-7ea4-4985-b8c6-f8eef770d0ed}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Appel\appel.h">
+      <Filter>Header Files\Appel</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\Common\console.h">
+      <Filter>Header Files\Appel\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\Common\INIReader.h">
+      <Filter>Header Files\Appel\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\Common\sha256.h">
+      <Filter>Header Files\Appel\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\hooking.h">
+      <Filter>Header Files\Appel</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\Common\VMTHook.h">
+      <Filter>Header Files\Appel\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\interfaces.h">
+      <Filter>Header Files\Appel</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\Common\patternscanning.h">
+      <Filter>Header Files\Appel\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\Hooks\Present.h">
+      <Filter>Header Files\Appel\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\Menu\menu.h">
+      <Filter>Header Files\Appel\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\Common\MinHook.h">
+      <Filter>Header Files\Appel\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\Common\Imgui\dirent\dirent.h">
+      <Filter>Header Files\Appel\Common\imgui\dirent</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\Common\Imgui\stb_textedit.h">
+      <Filter>Header Files\Appel\Common\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\Common\Imgui\stb_truetype.h">
+      <Filter>Header Files\Appel\Common\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\Common\Imgui\TextEditor.h">
+      <Filter>Header Files\Appel\Common\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\Common\Imgui\imconfig.h">
+      <Filter>Header Files\Appel\Common\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\Common\Imgui\imgui.h">
+      <Filter>Header Files\Appel\Common\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\Common\Imgui\imgui_impl_dx9.h">
+      <Filter>Header Files\Appel\Common\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\Common\Imgui\imgui_internal.h">
+      <Filter>Header Files\Appel\Common\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\Common\Imgui\ImGuiFileDialog.h">
+      <Filter>Header Files\Appel\Common\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\Common\Imgui\stb_rect_pack.h">
+      <Filter>Header Files\Appel\Common\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\UI\TextBox.h">
+      <Filter>Header Files\Appel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\UI\TextOption.h">
+      <Filter>Header Files\Appel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\UI\UIManager.h">
+      <Filter>Header Files\Appel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\UI\AbstractOption.h">
+      <Filter>Header Files\Appel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\UI\AbstractSubmenu.h">
+      <Filter>Header Files\Appel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\UI\BaseOption.h">
+      <Filter>Header Files\Appel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\UI\BaseSubmenu.h">
+      <Filter>Header Files\Appel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\UI\BoolOption.h">
+      <Filter>Header Files\Appel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\UI\ChooseOption.h">
+      <Filter>Header Files\Appel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\UI\NumberOption.h">
+      <Filter>Header Files\Appel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\UI\PlayerSubmenu.h">
+      <Filter>Header Files\Appel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\UI\RegularOption.h">
+      <Filter>Header Files\Appel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\UI\RegularSubmenu.h">
+      <Filter>Header Files\Appel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\UI\SubOption.h">
+      <Filter>Header Files\Appel\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\Drawing\dx_drawing.h">
+      <Filter>Header Files\Appel\Drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\Common\definitions.h">
+      <Filter>Header Files\Appel\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\Common\sourcesdk.h">
+      <Filter>Header Files\Appel\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\Features\features.h">
+      <Filter>Header Files\Appel\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Appel\Config\config.h">
+      <Filter>Header Files\Appel\Config</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Appel\Common\sha256.cpp">
+      <Filter>Source Files\Appel\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Appel\Common\console.cpp">
+      <Filter>Source Files\Appel\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Appel\appel.cpp">
+      <Filter>Source Files\Appel</Filter>
+    </ClCompile>
+    <ClCompile Include="Appel\hooking.cpp">
+      <Filter>Source Files\Appel</Filter>
+    </ClCompile>
+    <ClCompile Include="Appel\Common\VMTHook.cpp">
+      <Filter>Source Files\Appel\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Appel\interfaces.cpp">
+      <Filter>Source Files\Appel</Filter>
+    </ClCompile>
+    <ClCompile Include="Appel\Hooks\Present.cpp">
+      <Filter>Source Files\Appel\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="Appel\Menu\menu.cpp">
+      <Filter>Source Files\Appel\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Appel\Common\Imgui\TextEditor.cpp">
+      <Filter>Source Files\Appel\Common\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Appel\Common\Imgui\imgui.cpp">
+      <Filter>Source Files\Appel\Common\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Appel\Common\Imgui\imgui_draw.cpp">
+      <Filter>Source Files\Appel\Common\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Appel\Common\Imgui\imgui_impl_dx9.cpp">
+      <Filter>Source Files\Appel\Common\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Appel\Common\Imgui\ImGuiFileDialog.cpp">
+      <Filter>Source Files\Appel\Common\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Appel\Menu\menu_imgui.cpp">
+      <Filter>Source Files\Appel\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Appel\UI\UIManager.cpp">
+      <Filter>Source Files\Appel\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Appel\Drawing\dx_drawing.cpp">
+      <Filter>Source Files\Appel\Drawing</Filter>
+    </ClCompile>
+    <ClCompile Include="Appel\Features\features.cpp">
+      <Filter>Source Files\Appel\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="Appel\Config\config.cpp">
+      <Filter>Source Files\Appel\Config</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Appel.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="pricedown.ttf" />
+    <Font Include="chalet.ttf" />
+  </ItemGroup>
+</Project>

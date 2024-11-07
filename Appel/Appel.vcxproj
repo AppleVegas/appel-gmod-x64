@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{134d3b13-4da6-49f7-9230-fc464462887b}</ProjectGuid>
+    <RootNamespace>Appel</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(DXSDK_DIR)Include</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64;$(DXSDK_DIR)Lib\x64</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;APPEL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>bin\libMinHook-x64-v141-mtd.lib;bin\d3dx9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;APPEL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalOptions>/D "_CRT_SECURE_NO_WARNINGS" /std:c++17 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>bin\libMinHook-x64-v141-mtd.lib;bin\d3dx9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>C:\Users\i8926\Desktop\Appel_GMOD_v3\Appel\Appel;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Appel\appel.h" />
+    <ClInclude Include="Appel\Common\console.h" />
+    <ClInclude Include="Appel\Common\definitions.h" />
+    <ClInclude Include="Appel\Common\Imgui\dirent\dirent.h" />
+    <ClInclude Include="Appel\Common\Imgui\imconfig.h" />
+    <ClInclude Include="Appel\Common\Imgui\imgui.h" />
+    <ClInclude Include="Appel\Common\Imgui\ImGuiFileDialog.h" />
+    <ClInclude Include="Appel\Common\Imgui\imgui_impl_dx9.h" />
+    <ClInclude Include="Appel\Common\Imgui\imgui_internal.h" />
+    <ClInclude Include="Appel\Common\Imgui\stb_rect_pack.h" />
+    <ClInclude Include="Appel\Common\Imgui\stb_textedit.h" />
+    <ClInclude Include="Appel\Common\Imgui\stb_truetype.h" />
+    <ClInclude Include="Appel\Common\Imgui\TextEditor.h" />
+    <ClInclude Include="Appel\Common\INIReader.h" />
+    <ClInclude Include="Appel\Common\MinHook.h" />
+    <ClInclude Include="Appel\Common\patternscanning.h" />
+    <ClInclude Include="Appel\Common\sha256.h" />
+    <ClInclude Include="Appel\Common\sourcesdk.h" />
+    <ClInclude Include="Appel\Common\VMTHook.h" />
+    <ClInclude Include="Appel\Config\config.h" />
+    <ClInclude Include="Appel\Drawing\dx_drawing.h" />
+    <ClInclude Include="Appel\Features\features.h" />
+    <ClInclude Include="Appel\hooking.h" />
+    <ClInclude Include="Appel\Hooks\Present.h" />
+    <ClInclude Include="Appel\interfaces.h" />
+    <ClInclude Include="Appel\Menu\menu.h" />
+    <ClInclude Include="Appel\UI\AbstractOption.h" />
+    <ClInclude Include="Appel\UI\AbstractSubmenu.h" />
+    <ClInclude Include="Appel\UI\BaseOption.h" />
+    <ClInclude Include="Appel\UI\BaseSubmenu.h" />
+    <ClInclude Include="Appel\UI\BoolOption.h" />
+    <ClInclude Include="Appel\UI\ChooseOption.h" />
+    <ClInclude Include="Appel\UI\NumberOption.h" />
+    <ClInclude Include="Appel\UI\PlayerSubmenu.h" />
+    <ClInclude Include="Appel\UI\RegularOption.h" />
+    <ClInclude Include="Appel\UI\RegularSubmenu.h" />
+    <ClInclude Include="Appel\UI\SubOption.h" />
+    <ClInclude Include="Appel\UI\TextBox.h" />
+    <ClInclude Include="Appel\UI\TextOption.h" />
+    <ClInclude Include="Appel\UI\UIManager.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Appel\appel.cpp" />
+    <ClCompile Include="Appel\Common\console.cpp" />
+    <ClCompile Include="Appel\Common\Imgui\imgui.cpp" />
+    <ClCompile Include="Appel\Common\Imgui\ImGuiFileDialog.cpp" />
+    <ClCompile Include="Appel\Common\Imgui\imgui_draw.cpp" />
+    <ClCompile Include="Appel\Common\Imgui\imgui_impl_dx9.cpp" />
+    <ClCompile Include="Appel\Common\Imgui\TextEditor.cpp" />
+    <ClCompile Include="Appel\Common\sha256.cpp" />
+    <ClCompile Include="Appel\Common\VMTHook.cpp" />
+    <ClCompile Include="Appel\Config\config.cpp" />
+    <ClCompile Include="Appel\Drawing\dx_drawing.cpp" />
+    <ClCompile Include="Appel\Features\features.cpp" />
+    <ClCompile Include="Appel\hooking.cpp" />
+    <ClCompile Include="Appel\Hooks\Present.cpp" />
+    <ClCompile Include="Appel\interfaces.cpp" />
+    <ClCompile Include="Appel\Menu\menu.cpp" />
+    <ClCompile Include="Appel\Menu\menu_imgui.cpp" />
+    <ClCompile Include="Appel\UI\UIManager.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Appel.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="chalet.ttf" />
+    <Font Include="pricedown.ttf" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
