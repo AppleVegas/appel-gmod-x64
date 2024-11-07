@@ -9,7 +9,7 @@ An x64 C++ Garry's Mod hack base with a unique UI.
 
 #### That's why I decided to port it to Garry's Mod, bringing a familiar menu UI from one my favourite game to another.
 
-I wrote this code back in the middle of 2021, when I was still coding for gmod every now and then, but I stopped when I started attending university.
+I wrote this code back in the middle of 2021, when I was still coding for gmod every now and then, but I stopped after I started attending university.
 
 ## Features
 <details>
