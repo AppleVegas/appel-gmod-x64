@@ -85,7 +85,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <AdditionalDependencies>bin\libMinHook-x64-v141-mtd.lib;bin\d3dx9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>lib\libMinHook-x64-v141-mtd.lib;lib\d3dx9.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ResourceCompile>
       <AdditionalIncludeDirectories>C:\Users\i8926\Desktop\Appel_GMOD_v3\Appel\Appel;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
