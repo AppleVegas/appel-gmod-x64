@@ -5,7 +5,7 @@ An x64 C++ Garry's Mod hack base with a unique UI.
 
 ## Why?
 - I hate most ImGui UIs
-- I personally love how mod menus for **Grand Theft Auto V** generally look like, I find them *very* usable in terms of user experience. This is my desired UI for a game hack.
+- I love how mod menus for **Grand Theft Auto V** generally look like, I find them *very* usable in terms of user experience. This is my desired UI for a game hack.
 
 #### That's why I decided to port it to Garry's Mod, bringing a familiar menu UI from one my favourite game to another.
 
@@ -37,8 +37,9 @@ You can color labels in menu by using tags:
 <summary>ImGui Lua Editor</summary>
   
 ![image](https://github.com/AppleVegas/appel-gmod-x64/blob/ef17f7dcc9d88ca9767db8b5ba7f88e77a295c21/img/7.png)
- 
-*Doesn't execute lua because of a missing interface. Leftover from my previous gmod hack for 32-bit version of the game, can still work though after the interface is implemented.*
+
+**Note:** 
+ - Doesn't execute lua because of a missing interface. Leftover from my previous gmod hack for 32-bit version of the game, can still work though after the interface is implemented.
 </details>
 <details>
 <summary>Themes support</summary>
@@ -59,15 +60,18 @@ And, of course, this base was originally meant for **Garry's Mod**, but nothing 
 You will have to remove any references to engine functions, and rewrite them in some other way, since they are required in order to determine screen resolution and game activity.
 
 ## Compiling
-All the necessary dependencies already are included in the project. 
+All the necessary dependencies already are included in the project, **which are**:
+- SourceSDK headers
+- MinHook
+- DX9SDK
 
 This project had been updated in November of 2024 by me to compile under MS Visual Studio 2019.
 
 ## Projects used
-*My old 32-bit gmod hack which is based on [FreeTheSkids](https://github.com/11Lee1/Free-The-Skids)*
+My old 32-bit gmod hack [appel-gmod-x86](https://github.com/AppleVegas/appel-gmod-x86)
 
-*Lua editor powered by [ImGuiColorTextEdit](https://github.com/BalazsJako/ImGuiColorTextEdit)*
+Lua editor powered by [Dear Imgui](https://github.com/ocornut/imgui) and [ImGuiColorTextEdit](https://github.com/BalazsJako/ImGuiColorTextEdit)
 
-*UIManager stripped from [BigBase](https://gitlab.com/pocakking/bigbase)*
+UIManager stripped from [BigBase](https://gitlab.com/pocakking/bigbase)
 
   
